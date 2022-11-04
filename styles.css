@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto',sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
     top: 0;
     padding: 0;
 }
+
+/* header */
 
 header {
     background-color: #1f2937;
@@ -62,6 +65,7 @@ header h1 {
     border: none;
     border-radius: 10px;
     padding: 10px;
+    font-weight: bold;
 }
 
 /* section two */
@@ -72,8 +76,12 @@ header h1 {
     align-items: center;
 }
 
-.two h2 {
+.two h1 {
     margin: 0;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bolder;
+    margin-bottom: 70px;
 }
 
 .rectangle {
@@ -85,7 +93,85 @@ header h1 {
 
 .list-card {
     display: flex;
+    gap: 32px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+
+.list-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* section three */
+.three {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 400px;
+    align-items: center;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+cite {
+    align-self: flex-end;
+}
+
+/* section four */
+.four {
+    padding: 90px 400px;
+    /* justify-content: center;
+    flex: 1; */
+}
+.container-blue {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+
+.container-blue h2, .container-blue p, blockquote{
+    margin: 0;
+}
+
+.container-blue .word {
+    margin: 0;
+}
+
+.container-blue button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #F9FAF8;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: #1f2937;
+    color: #F9FAF8;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 
